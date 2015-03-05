@@ -1,13 +1,13 @@
 class DockerMachine < Formula
   homepage "https://github.com/docker/machine"
-  version "0.1.0-rc5"
+  version "0.1.0"
 
   if Hardware.is_64_bit?
     url "https://github.com/docker/machine/releases/download/v#{version}/docker-machine_darwin-amd64"
-    sha256 "c04251529cdfcd51ac1e3ebd19cf117e978f3e5d6c117b7b591b0c9768d15e76"
+    sha256 "9915d88f779915aa7f1d7ba2537433b15665030574d61b9e348dd1f7397606c4"
   else
     url "https://github.com/docker/machine/releases/download/v#{version}/docker-machine_darwin-386"
-    sha256 "565498bea38b993d2c15f701e6d845bbbb4b18c27478b7f07c32e6c6c41c45af"
+    sha256 "bb00460490c3b5a4ee2e74676d1195599f769e6d8beaf6dd3609a27316f81e94"
   end
 
   depends_on :arch => :intel
